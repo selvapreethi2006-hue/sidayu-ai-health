@@ -1,0 +1,34 @@
+{
+  "name": "sidayu-ai-health",
+  "version": "1.0.0",
+  "description": "AI-powered healthcare guidance platform - Your intelligent guide to natural wellness",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\"",
+    "frontend:dev": "npm run dev --workspace=frontend",
+    "backend:dev": "npm run dev --workspace=backend",
+    "frontend:build": "npm run build --workspace=frontend",
+    "backend:build": "npm run build --workspace=backend",
+    "install-all": "npm install && npm install --workspace=frontend && npm install --workspace=backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "healthcare",
+    "AI",
+    "wellness",
+    "health-guidance",
+    "ai-agents",
+    "natural-medicine"
+  ],
+  "author": "Sidayu Team",
+  "license": "MIT"
+}
